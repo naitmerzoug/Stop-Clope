@@ -1,0 +1,32 @@
+ {{> header}}
+ </div> <div class="container">
+            <div class="center">
+                <div class="jumbotron">
+                    <form name="newUserForm" action="/create-new-user" onsubmit="return validateForm()" method="POST">
+                    
+                        <h1 class="display-4" style="color:goldenrod; font-family: 'Courier New', Courier, monospace;">Inscription</h1><br/><br/>
+               
+                    
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control" type="text" placeholder="username" name="username">
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="email" placeholder="email adress" name="email"><br/>
+                                <input class="form-control" type="email" placeholder="email confirmation" name="email2">
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="password" placeholder="password" name="password" id="password"><br/>
+                                <input class="form-control" type="password" placeholder="password confirmation" name="password2" id="password2">
+                            </div>
+                        </div><br/>
+
+                        <button class="btn btn-warning btn-lg justify-content-center" type="submit" style="font-family: 'Courier New', Courier, monospace;" onClick="CheckForm()">Inscription </button><br/>
+    
+                        <p>    
+                            <a href="/login">Tu as deja un compte , clique ici</a>
+                        </p>        
+    
+                    </form>
+                </div>    
+        </div>

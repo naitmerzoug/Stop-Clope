@@ -1,0 +1,14 @@
+{{> header}}
+
+  <div class="row row-cols-1 row-cols-sm-2">
+    <div class="col">
+      <h1> Supprimer une recette </h1>
+      <p>Êtes-vous sûr de vouloir supprimer vos données "{{pseudo}}" ?</p>
+      <form class="form-inline" action="/delete/{{id}}" method="post">
+        <input class="form-control btn btn-primary mr-2" type="submit" value="Effacer">
+        <a class="form-control btn btn-primary" href="/read/{{id}}">Annuler<a>
+      </form>
+    </div>
+  </div>
+
+{{> footer

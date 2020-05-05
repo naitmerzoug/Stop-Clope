@@ -1,0 +1,340 @@
+{{>header}}
+<div class="container">
+            <div class="center">
+                <div class="jumbotron">
+                	<form action="/compteur" method="POST">
+                		<div class="field">
+<p>
+<table width="90%" class="txt"><tbody>
+<tr>
+<td align="center" valign="middle" width="50">
+<img src="//www.stop-tabac.ch/hon/images/compteur_login.jpg" border="0">
+</td><td valign="top">
+<span class="txtgras">Mon pseudo pour ce compteur:
+<br />
+<input name="pseudo" size="20" type="text" value=""> </span>                              
+</td></tr></tbody></table>
+</p> 
+<p>
+<table width="90%" class="txt"><tbody>
+<tr>
+<td align="center" valign="middle"  width="50">
+<img src="https://www.stop-dependance.ch/hon/images/compteur_date.jpg" border="0">
+</td><td valign="top">
+
+
+                                
+                                <span class="txtgras">Je veux arr&ecirc;ter de fumer le :<br>
+
+                                <select name="jourstop">
+<option value="" selected="selected">Jour</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+                                </select>
+
+                                <select name="moisstop">
+<option value="" selected="selected">Mois</option>
+<option value="01">Janvier</option>
+<option value="02">F&eacute;vrier</option>
+<option value="03">Mars</option>
+<option value="04">Avril</option>
+<option value="05">Mai</option>
+<option value="06">Juin</option>
+<option value="07">Juillet</option>
+<option value="08">Aout</option>
+<option value="09">Septembre</option>
+<option value="10">Octobre</option>
+<option value="11">Novembre</option>
+<option value="12">D&eacute;cembre</option>
+                                </select>
+                                <select name="anneestop">
+<option value="" selected="selected">Ann&eacute;e</option>
+
+
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+<option value="2027">2027</option>
+
+
+
+
+                           </select>
+                                </span>
+</td></tr></tbody></table>
+</p>  
+                               
+   
+
+<p>
+<table width="90%" class="txt"><tbody>
+<tr>
+<td align="center" valign="middle" width="50">
+<img src="https://www.stop-dependance.ch/hon/images/compteur_cigarette_fumeur.jpg" width="36" border="0">
+</td><td valign="top">
+
+
+                                
+                                <span class="txtgras">Chaque jour je fume en moyenne :</span><br />
+                                
+                                
+                                <span class="txt">
+                                <select name="cpd">
+<option value="" selected="selected"></option>
+                               
+
+                                <option>0.5 </option>
+                                <option>1 </option>
+                                <option>2 </option>
+                                <option>3 </option>
+                                <option>4 </option>
+                                <option>5 </option>
+
+                                <option>6 </option>
+                                <option>7 </option>
+                                <option>8 </option>
+                                <option>9 </option>
+                                <option>10 </option>
+                                <option>11 </option>
+
+                                <option>12 </option>
+                                <option>13 </option>
+                                <option>14 </option>
+                                <option>15 </option>
+                                <option>16 </option>
+                                <option>17 </option>
+
+                                <option>18 </option>
+                                <option>19 </option>
+                                <option>20 </option>
+                                <option>21 </option>
+                                <option>22 </option>
+                                <option>23 </option>
+
+                                <option>24 </option>
+                                <option>25 </option>
+                                <option>26 </option>
+                                <option>27 </option>
+                                <option>28 </option>
+                                <option>29 </option>
+
+                                <option>30 </option>
+                                <option>35 </option>
+                                <option>40 </option>
+                                <option>45 </option>
+                                <option>50 </option>
+                                <option>55 </option>
+
+                                <option>60 </option>
+                                <option>65 </option>
+                                <option>70 </option>
+                                <option>75 </option>
+                                <option>80 </option>
+                                <option>85 </option>
+
+                                <option>90 </option>
+                                <option>95 </option>
+                                <option>100 </option>
+                                </select>
+
+cig./jour</span>
+</td></tr></tbody></table>
+</p>  
+                               
+   
+
+<p>
+<table width="90%" class="txt"><tbody>
+<tr>
+<td align="center" valign="middle" width="50">
+<img src="https://www.stop-dependance.ch/hon/images/compteur_cigarette.jpg" width="36" border="0">
+</td><td valign="top">
+
+
+                                
+                                <span class="txtgras">
+Si je d&eacute;cide de r&eacute;duire ma consommation de cigarettes, mon objectif sera de :
+</span><br /><span class="txtgras">
+                                <select name="objectif">
+<option value="" selected="selected"></option>
+                               <option>0</option>
+                                <option>1 </option>
+                                <option>2 </option>
+                                <option>3 </option>
+                                <option>4 </option>
+                                <option>5 </option>
+
+                                <option>6 </option>
+                                <option>7 </option>
+                                <option>8 </option>
+                                <option>9 </option>
+                                <option>10 </option>
+                                <option>11 </option>
+
+                                <option>12 </option>
+                                <option>13 </option>
+                                <option>14 </option>
+                                <option>15 </option>
+                                <option>16 </option>
+                                <option>17 </option>
+
+                                <option>18 </option>
+                                <option>19 </option>
+                                <option>20 </option>
+                                <option>21 </option>
+                                <option>22 </option>
+                                <option>23 </option>
+
+                                <option>24 </option>
+                                <option>25 </option>
+                                <option>26 </option>
+                                <option>27 </option>
+                                <option>28 </option>
+                                <option>29 </option>
+
+                                <option>30 </option>
+                                <option>35 </option>
+                                <option>40 </option>
+                                <option>45 </option>
+                                <option>50 </option>
+                                <option>55 </option>
+
+                                <option>60 </option>
+                                <option>65 </option>
+                                <option>70 </option>
+                                <option>75 </option>
+                                <option>80 </option>
+                                <option>85 </option>
+
+                                <option>90 </option>
+                                <option>95 </option>
+                                <option>100 </option>
+                                </select>
+
+cig./jour</span>
+</td></tr></tbody></table>
+</p>  
+                               
+   
+
+<p>
+<table width="90%" class="txt"><tbody>
+<tr>
+<td align="center" valign="middle" width="50">
+<img src="https://www.stop-dependance.ch/hon/images/compteur_economies2.png" width="20" border="0">
+</td><td valign="top">
+
+
+   <span class="txtgras">                             
+ Un paquet de 20 cigarettes me co&ucirc;te :<p>(arrondi en euros)</span>
+                                <br />
+                                
+                                <span class="txtgras">
+                                <select name="depense">
+<option value="" selected="selected"></option>                                <option>0 </option>
+                                <option>1 </option>
+                                <option>2 </option>
+                                <option>3 </option>
+                                <option>4 </option>
+                                <option>5 </option>
+                                <option>6 </option>
+                                <option>7 </option>
+                                <option>8 </option>
+                                <option>9 </option>
+                                <option>10 </option>
+                                <option>11 </option>
+                                <option>12 </option>
+
+                                <option>13 </option>
+                                <option>14 </option>
+                                <option>15 </option>
+                                <option>16 </option>
+                                <option>17 </option>
+                                <option>18 </option>
+
+                                <option>19 </option>
+                                <option>20 </option>
+                                <option>21 </option>
+                                <option>22 </option>
+                                <option>23 </option>
+                                <option>24 </option>
+
+                                <option>25 </option>
+                                <option>26 </option>
+                                <option>27 </option>
+                                <option>28 </option>
+                                <option>29 </option>
+                                <option>30 </option>
+
+                                <option>35 </option>
+                                <option>40 </option>
+                                <option>45 </option>
+                                <option>50 </option>
+                                <option>55 </option>
+                                <option>60 </option>
+
+                                <option>65 </option>
+                                <option>70 </option>
+                                <option>75 </option>
+                                <option>80 </option>
+                                <option>85 </option>
+                                <option>90 </option>
+
+                                <option>95 </option>
+                                <option>100 </option>
+                                </select>
+                                 
+                                </span>                               
+</td></tr></tbody></table>
+</p> 
+						 </div>
+
+                    <button class="btn btn-outline-dark" type="submit">Lancer <i class="fa fa-send"></i></button><br/>
+                </form>
+
+    
+
+
+		</div>
+	</div>
+</div>
+                               
+   
+
+
+
+
+{{>footer}}

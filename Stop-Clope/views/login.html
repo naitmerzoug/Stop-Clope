@@ -1,0 +1,29 @@
+{{> header}}
+		<div class="container">
+            <div class="center-SignIn">
+                <div class="jumbotron">
+                    <form action="/login" method="POST">
+                        <h1 class="display-4" style="color:goldenrod; font-family: 'Courier New', Courier, monospace;">Connectez-vous</h1><br/><br/>
+                    
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control" type="email" placeholder="adresse mail" name="email">
+                                <div class="form-check"><br/>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox"> se souvenir de moi 
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="password" placeholder="mot-de-passe" name="password"><br/>
+                            </div>
+                        </div><br/>
+                        <button class="btn btn-warning btn-lg justify-content-center" type="submit" style="font-family: 'Courier New', Courier, monospace;">Me connecter</button><br/>
+
+                        <p>  
+                            <a href="/create-new-user">Vous n'étes pas encore inscrit ? cliquez ici </a>       
+                        </p>  
+                    </form>
+                </div>
+            </div>
+        </div>
